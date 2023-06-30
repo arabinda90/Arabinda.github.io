@@ -1,0 +1,836 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Arabinda - Personal Portfolio</title>
+
+  <!--
+    - favicon
+  -->
+  <link rel="shortcut icon" href="./assets/images/logo.ico" type="image/x-icon">
+
+  <!--
+    - custom css link
+  -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+
+  <!--
+    - google font link
+  -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+  <!--
+    - #MAIN
+  -->
+
+  <main>
+
+    <!--
+      - #SIDEBAR
+    -->
+    <!-- <body style="background-color:khaki;"> 
+      -->
+    <aside class="sidebar" data-sidebar>
+
+      <div class="sidebar-info">
+
+        <figure class="avatar-box">
+          <img src="./assets/images/Profile pic.png" alt="Richard hanrick" width="80">
+        </figure>
+
+        <div class="info-content">
+          <h1 class="name" title="Arabinda Maiti">Arabinda Maiti</h1>
+
+          <p class="title">Researcher</p>
+        </div>
+
+        <button class="info_more-btn" data-sidebar-btn>
+          <span>Show Contacts</span>
+
+          <ion-icon name="chevron-down"></ion-icon>
+        </button>
+
+      </div>
+
+      <div class="sidebar-info_more">
+
+        <div class="separator"></div>
+
+        <ul class="contacts-list">
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="mail-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Email</p>
+
+              <a class="contact-link">arabinda@mail.vidyasagar.ac.in</a>
+              
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="phone-portrait-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Phone</p>
+
+              <a class="contact-link">(+91) 8436353488</a>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="calendar-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Birthday</p>
+
+              <time datetime="1990-10-16">Oct 16, 1990</time>
+            </div>
+
+          </li>
+
+          <li class="contact-item">
+
+            <div class="icon-box">
+              <ion-icon name="location-outline"></ion-icon>
+            </div>
+
+            <div class="contact-info">
+              <p class="contact-title">Location</p>
+
+              <address>Midnapore, West Bengal, India</address>
+            </div>
+
+          </li>
+
+        </ul>
+
+        <div class="separator"></div>
+
+        <ul class="social-list">
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-facebook"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-twitter"></ion-icon>
+            </a>
+          </li>
+
+          <li class="social-item">
+            <a href="#" class="social-link">
+              <ion-icon name="logo-instagram"></ion-icon>
+            </a>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </aside>
+
+
+
+
+
+    <!--
+      - #main-content
+    -->
+
+    <div class="main-content">
+
+      <!--
+        - #NAVBAR
+      -->
+
+      <nav class="navbar">
+
+        <ul class="navbar-list">
+
+          <li class="navbar-item">
+            <button class="navbar-link  active" data-nav-link>About</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resume</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Skils</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Resource</button>
+          </li>
+
+          <li class="navbar-item">
+            <button class="navbar-link" data-nav-link>Contact</button>
+          </li>
+
+        </ul>
+
+      </nav>
+
+
+
+
+
+      <!--
+        - #ABOUT
+      -->
+
+      <article class="about  active" data-page="about">
+
+        <header>
+          <h2 class="h2 article-title">About me</h2>
+        </header>
+
+        <section class="about-text">
+          <p>
+            I am Arabinda Maiti, pursuing a Ph.D. from Vidyasagar University, India. My area of interest is crop mapping, crop phenology, yield analysis, and the impact of climate on them. I am very punctual with my work. I developed myself as a data scientist with  programming (R, Python, GEE). However, I have some publications in international scientific journals.
+          </p>
+          <p class = "coadingh2"> I love collaboration work so if you have any interest or seek to research collaboration, please contact me through email (maitiarabindageo454@gmail.com).</p>
+
+        </section>
+
+
+        <!--
+          - Group Members
+        -->
+
+        <section class="Team">
+
+          <h2 class="h3 testimonials-title", style="color:#fb5311">Team</h2>
+
+          <!--<ul class="testimonials-list has-scrollbar">-->
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Prasenjit.jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Prasenjit Acharya</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Assistant Professor, Department of Geography, Vidyasagar University| PhD Jawaharlal Nehru University| <a href="https://scholar.google.co.in/citations?user=W_VklnIAAAAJ&hl=en" style="display: inline-block !important;">(Google Scholar)</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Srikanta.jpg" alt="Daniel lewis" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Srikanta Sannigrahi</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Post-Doctoral Fellow, University College Dublin | PhD IIT Kharagpur | 
+                      <a href="https://scholar.google.co.in/citations?user=2p7t0QwAAAAJ&hl=en/" style="display: inline-block !important;">(Google Scholar)</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/QiZhang.jpg" alt="Jessica miller" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Qi Zhang</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Post-Doctoral Fellow, Department of Geography, University of North Carolina at Chapel Hill| PhD Boston University| <a href="https://scholar.google.com/citations?user=v7n2b6oAAAAJ&hl=en" style="display: inline-block !important;">(Google Scholar)</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Suman.png" alt="Emily evans" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Suman Chakraborty</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    PwC| PhD Jawaharlal Nehru University| <a href="https://scholar.google.com/citations?user=v7n2b6oAAAAJ&hl=en" style="display: inline-block !important;">(Google Scholar)</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+            <li class="testimonials-item">
+              <div class="content-card" data-testimonials-item>
+
+                <figure class="testimonials-avatar-box">
+                  <img src="./assets/images/Somnath.jpg" alt="Henry william" width="60" data-testimonials-avatar>
+                </figure>
+
+                <h4 class="h4 testimonials-item-title" data-testimonials-title>Somnath Bar</h4>
+
+                <div class="testimonials-text" data-testimonials-text>
+                  <p>
+                    Post-Doctoral Fellow, University of Southampton| PhD The Central University of Jharkhand (CUJ)| <a href="https://scholar.google.com/citations?user=kUz-9RwAAAAJ&hl=en" style="display: inline-block !important;">(Google Scholar)</a>
+                  </p>
+                </div>
+
+              </div>
+            </li>
+
+          </ul>
+
+        </section>
+        
+
+
+        <!--
+          - testimonials modal
+        -->
+
+        <div class="modal-container" data-modal-container>
+
+          <div class="overlay" data-overlay></div>
+
+          <section class="testimonials-modal">
+
+            <button class="modal-close-btn" data-modal-close-btn>
+              <ion-icon name="close-outline"></ion-icon>
+            </button>
+
+            <div class="modal-img-wrapper">
+              <figure class="modal-avatar-box">
+                <img src="./assets/images/avatar-1.png" alt="Daniel lewis" width="80" data-modal-img>
+              </figure>
+
+              <img src="./assets/images/icon-quote.svg" alt="quote icon">
+            </div>
+
+            <div class="modal-content">
+
+              <h4 class="h3 modal-title" data-modal-title>Daniel lewis</h4>
+
+              <time datetime="2021-06-14">14 June, 2021</time>
+
+              <div data-modal-text>
+                <p>
+                  Richard was hired to create a corporate identity. We were very pleased with the work done. She has a
+                  lot of experience
+                  and is very concerned about the needs of client. Lorem ipsum dolor sit amet, ullamcous cididt
+                  consectetur adipiscing
+                  elit, seds do et eiusmod tempor incididunt ut laborels dolore magnarels alia.
+                </p>
+              </div>
+
+            </div>
+
+          </section>
+
+        </div>
+
+
+  
+
+      </article>
+
+
+
+
+
+      <!--
+        - #RESUME
+      -->
+
+      <article class="resume" data-page="resume">
+
+        <header>
+          <h2 class="h2 article-title">Resume</h2>
+        </header>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Education</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">University</h4>
+
+              <span>Vidyasagar University: 2011 — 2013</span>
+
+              <p class="timeline-text">
+                Master of Science in Geography
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">College</h4>
+
+              <span>Mahishadal Raj College: 2008 — 2011</span>
+
+              <p class="timeline-text">
+                Hons in Geography
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">High school</h4>
+
+              <span>Purba Chilka Lal Chand High School: 2000 — 2008</span>
+
+              <p class="timeline-text">
+                I have complitated my school degree during that time.
+              </p>
+
+            </li>
+
+          </ol>
+
+        </section>
+
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            <h3 class="h3">Experience</h3>
+          </div>
+
+          <ol class="timeline-list">
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Junior Research Fellowship (JRF)</h4>
+
+              <span>University Grants Commissions: July, 2016</span>
+
+              <p class="timeline-text">
+                UGC-Ref. No. - 3265(NET-JULY 2016)
+              </p>
+
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Guest Lecturer </h4>
+
+              <span>Jan, 2014 - Nov, 2017</span>
+
+              <p class="timeline-text">
+                  Midnapore College (Autonomous), Midnapore                       
+              </p>
+              <p class="timeline-text">
+                Vivekananda Satavarshiki Mahavidyalaya, Jhargram 
+              </p>
+            
+
+          </ol>
+
+        </section>
+
+        <section class="skill">
+
+          <h3 class="h3 skills-title">My skills</h3>
+
+          <ul class="skills-list content-card">
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">R</h5>
+                <data value="80">80%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 80%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">Python</h5>
+                <data value="70">70%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 70%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">GEE</h5>
+                <data value="65">65%</data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 65%;"></div>
+              </div>
+
+            </li>
+
+            <li class="skills-item">
+
+              <div class="title-wrapper">
+                <h5 class="h5">QGIS, ArcGIS, ENV</h5>
+                <data value="50"></data>
+              </div>
+
+              <div class="skill-progress-bg">
+                <div class="skill-progress-fill" style="width: 50%;"></div>
+              </div>
+
+            </li>
+
+          </ul>
+
+        </section>
+............................................................................................................................................................................................
+        <section class="timeline">
+
+          <div class="title-wrapper">
+            <div class="icon-box">
+              <ion-icon name="book-outline"></ion-icon>
+            </div>
+
+            
+            <h3 class="h3">Publications</h3>
+          </div>
+
+          <ol class="timeline-list">
+            <li class="timeline-item">
+              <h4 class="h2 timeline-item-title"><li> <b>Maiti, A.,</b> Acharya, P., 2018. Mapping rice cropping system in the Lower Gangetic Plain using Landasat 8 ( OLI ) and MODIS imagery. 2018 ISPRS TC V Mid-term Symp. “Geospatial Technol. – Pixel to People” XLII–5, 20–23.</li></h4>
+            </li>
+          
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title">Chakraborti, S., Banerjee, A., Sannigrahi, S., Pramanik, S.,<b>Maiti, A.,</b>  Jha, S., 2019. Assessing the dynamic relationship among land use pattern and land surface temperature : A spatial regression approach Assessing the dynamic relationship among land use pattern and land surface temperature : A spatial regression approach Suman Chakraborti.<span style="color:#05a605"> Asian Geogr.</span> 0, 1–24. <a href="https://doi.org/10.1080/10225706.2019.1623054">https://doi.org/10.1080/10225706.2019.1623054</a></li></h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><li> Chakraborti, S., <b>Maiti, A.,</b>  Pramanik, S., Sannigrahi, S., Pilla, F., Banerjee, A., Nath, D., 2020. Evaluating the plausible application of advanced machine learnings in exploring determinant factors of present pandemic : A case for continent speci fi c COVID-19 analysis. <span style="color:#05a605"> Sci. Total Environ.</span>142723. <a href= "https://doi.org/10.1016/j.scitotenv.2020.142723">https://doi.org/10.1016/j.scitotenv.2020.142723</a></li></h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><li> Barik, G., Acharya, P., <b>Maiti, A.</b>, Krishna, B., Bar, S., 2020. A synergy of linear model and wavelet analysis towards space-time characterization of aerosol optical depth ( AOD ) during pre-monsoon season ( 2007-2016 ) over Indian sub-continent Journal of Atmospheric and Solar-Terrestrial Physics A synergy of linear . J.<span style="color:#05a605"> Atmos. Solar-Terrestrial Phys..</span>211, 105478. <a href="https://doi.org/10.1016/j.jastp.2020.105478"> https://doi.org/10.1016/j.jastp.2020.105478</a> </li></h4>
+            </li>
+
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><li> Acharya, P., Barik, G., Krishna, B., Bar, S., <b>Maiti, A.</b>, Sarkar, A., Ghosh, S., De, S.K., Sreekesh, S., 2021. Revisiting the levels of Aerosol Optical Depth in south-southeast Asia , Europe and USA amid the COVID-19 pandemic using satellite observations.<span style="color:#05a605"></span> Environ. Res. 193, 110514. <a href="https://doi.org/10.1016/j.envres.2020.110514">https://doi.org/10.1016/j.envres.2020.110514</a></li></h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><li> <b>Maiti, A.</b>, Zhang, Q., Sannigrahi, S., Pramanik, S., 2021. Exploring spatiotemporal effects of the driving factors on COVID-19 incidences in the contiguous United States.<span style="color:#05a605">Sustain. Cities Soc.</span>  68, 102784. <a href="https://doi.org/10.1016/j.scs.2021.102784">https://doi.org/10.1016/j.scs.2021.102784</a></li></h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><li> <b>Arabinda, M.</b>, Prasenjit, A., Srikanta, S., Qi, Z., Somnath, B., Suman, C., K, G.B., Gunadhar, B., Surajit, G., Milap, P., 2022. Mapping active paddy rice area over monsoon asia using time-series Sentinel – 2 images in Google earth engine ; a case study over lower gangetic plain.<span style="color:#05a605">Geocarto Int.</span>  0, 1–24. <a href="https://doi.org/10.1080/10106049.2022.2032396">https://doi.org/10.1080/10106049.2022.2032396</a></li></h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><li> Sannigrahi, S., Pilla, F., <b>Maiti, A.</b>, Bar, S., Bhatt, S., Zhang, Q., Keesstra, S., Cerda, A., 2022. Examining the status of forest fire emission in 2020 and its connection to COVID-19 incidents in West Coast regions of the United States.<span style="color:#05a605">Environ. Res.</span>  210, 112818.<a href="https://doi.org/10.1016/j.envres.2022.112818">https://doi.org/10.1016/j.envres.2022.112818</a></span></li></h4>
+            </li>
+            <li class="timeline-item">
+
+              <h4 class="h4 timeline-item-title"><li> Qi, Y., Zhang, T., Cao, J., Jin, C., Chen, T., Su, Y., Su, C., Sannigrahi, S., <b>Maiti, A.</b>2022. Heterogeneity Impacts of Farmers ’ Participation in Payment for Ecosystem Services Based on the Collective Action Framework.<span style="color:#05a605">Land</span>  1–22. <a href="https://doi.org/10.3390/land11112007">https://doi.org/10.3390/land11112007</a></li></h4>
+            </li>
+           
+
+
+      </article>
+  
+
+
+
+      <!--
+        - #Skils
+      -->
+
+      <article class="skils" data-page="skils">
+
+        <header>
+          <h2 class="h2 article-title">Skils</h2>
+        </header>
+
+        <section class="projects">
+
+          <ul class="filter-list">
+
+            <li class="filter-item">
+              <button class="active" data-filter-btn>All</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>R</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>GEE</button>
+            </li>
+
+            <li class="filter-item">
+              <button data-filter-btn>Python</button>
+            </li>
+
+          </ul>
+
+          <div class="filter-select-box">
+
+            <button class="filter-select" data-select>
+
+              <div class="select-value" data-selecct-value>Select category</div>
+
+              <div class="select-icon">
+                <ion-icon name="chevron-down"></ion-icon>
+              </div>
+
+            </button>
+
+            <ul class="select-list">
+
+              <li class="select-item">
+                <button data-select-item>All</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>R</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>GEE</button>
+              </li>
+
+              <li class="select-item">
+                <button data-select-item>Python</button>
+              </li>
+
+            </ul>
+
+          </div>
+
+          <ul>
+            
+            <li class="project-item  active" data-filter-item data-category="r">
+              <a href="#">
+
+                <h1 class = "coadingh1">Vector Data Operation </h1>
+
+                <p class = "coadingh2">How to Import Excel Data </p>
+                  <pre class = "coading"><code>
+                    library(readxl)
+                    library(reshape2)
+                    library(data.table)
+                    data<- read_excel("D:/F/COVID19/Suman/Crop/IMD/Tmax/Data.xlsx") 
+                    data<- read.csv("D:/F/COVID19/Suman/Crop/IMD/Tmax/Data.csv")
+                  </code></pre>
+                
+
+                <p class = "coadingh2">How to Export Excel Data </p>
+                
+                <pre class = "coading"><code>
+                  write.table(cbin, file = "D:/F/COVID19/Suman/Crop/IMD/Tmax/Data.csv", sep =',')
+                </code></pre>
+
+              </a>
+            </li>
+
+            <li class="project-item active" data-filter-item data-category="gee">
+              <h1 class = "coadingh1"> Introduction to Google Earth Engine</h1> 
+              <p class="coadingtext">Google Earth Engine is a cloud-based platform <a href="https://code.earthengine.google.com/" style="display: inline-block !important;">(code.earthengine.google.com)</a>
+                that enables planetary-scale geospatial analysis of satellite imagery to monitor the Spatio-temporal changes,  trends, and quantify differences on the Earth’s surface. </p>>
+                <img class = "geeimage" src="./assets/images/1Gee_Introduction.jpg" alt="Description of the image">
+           
+                <li class="project-item active" data-filter-item data-category="gee">
+                  <h1 class = "coadingh1"> String, Number, Array,  List, and Dictionary</h1> 
+                  <p class="coadingtext">
+                    In this tutorial, we take Sentinel-2 data at 10-meter spatial resolution with 5-days temporal resolution
+                    <a href="https://code.earthengine.google.com/" style="display: inline-block !important;">Open in Code Editor </a>
+                    
+                    <pre class = "coading"><code>
+                      //##############################
+                      //            string: 
+                      //##############################
+                      //Ans : In computer programming, a string is traditionally a sequence of characters.
+                      var str = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
+                      print(str, 'str')
+                      //##############################
+                      //Array 
+                      //##############################
+                      //Ans : An array is a data structure containg a number of data value, all of which are 
+                      // same type. Correct array does not cotain numer and string simultaneously 
+                      //One dimension Array wchic have one row and multiple columns
+                      var array1D = ee.Array([1, 2, 3]); 
+                      //Two dimension Array, metrix formate, multiple row and colimns
+                      var array2D = ee.Array([[5, 2, 3], [-2, 7, 10], [6, 5, 9.9]]);
+                      print(array2D, 'array2D')
+                      //Three dimension Array,add time dimension in 2d array
+                      //##############################
+                      // List
+                      //##############################
+                      // Ans: a list is another name for an array.
+                      //Lists are used to store multiple items in a single variable.
+                      //Lists allow duplicate values: var lis = ee.List([5, 'five', 6, 'five']);
+                      var lis = ee.List([5, 'five', 6, 'six']);
+                      print(lis)
+                      // Dictionary
+                      // Dictionary is like a map that is used to store data in the form of a key:value pair.
+                      // we create a dictionary, where we stored Band information and its value.
+                      var dict = ee.Dictionary({
+                         B1: 182,
+                         B2: 219,
+                         B3: 443
+                        });
+                      /**
+                      * Convert S2 surface reflectance units to native/local scale. 1e4 = 10000
+                      */
+                      function scale(key, value) {
+                         return ee.Number(value).divide(1e4);
+                      }
+                      // Apply the function
+                      var app = dict.map(scale)
+                      print(app)
+                    </code></pre>
+                    
+      
+               
+              </li>
+            </section>
+
+          </article>
+
+
+
+
+
+      <!--
+        - #Resource
+      -->
+
+
+      <!--
+        - #CONTACT
+      -->
+
+      <article class="contact" data-page="contact">
+
+        <header>
+          <h2 class="h2 article-title">Contact</h2>
+        </header>
+
+        <section class="mapbox" data-mapbox>
+          <figure>
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d199666.5651251294!2d-121.58334177520186!3d38.56165006739519!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x809ac672b28397f9%3A0x921f6aaa74197fdb!2sSacramento%2C%20CA%2C%20USA!5e0!3m2!1sen!2sbd!4v1647608789441!5m2!1sen!2sbd"
+              width="400" height="300" loading="lazy"></iframe>
+          </figure>
+        </section>
+
+        <section class="contact-form">
+
+          <h3 class="h3 form-title">Contact Form</h3>
+
+          <form action="#" class="form" data-form>
+
+            <div class="input-wrapper">
+              <input type="text" name="fullname" class="form-input" placeholder="Full name" required data-form-input>
+
+              <input type="email" name="email" class="form-input" placeholder="Email address" required data-form-input>
+            </div>
+
+            <textarea name="message" class="form-input" placeholder="Your Message" required data-form-input></textarea>
+
+            <button class="form-btn" type="submit" disabled data-form-btn>
+              <ion-icon name="paper-plane"></ion-icon>
+              <span>Send Message</span>
+            </button>
+
+          </form>
+
+        </section>
+
+      </article>
+
+    </div>
+
+  </main>
+
+
+
+
+
+
+  <!--
+    - custom js link
+  -->
+  <script src="./assets/js/script.js"></script>
+
+  <!--
+    - ionicon link
+  -->
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+</body>
+
+</html>
