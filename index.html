@@ -706,51 +706,7 @@
                   <p class="coadingtext">
                     In this tutorial, we take Sentinel-2 data at 10-meter spatial resolution with 5-days temporal resolution
                     <a href="https://code.earthengine.google.com/274829c1313f2abf54d6ec947009d1a2" style="display: inline-block !important;">Open in Code Editor </a>
-                    
-                    <pre class = "coading"><code>
-                      //##############################
-                      //            string: 
-                      //##############################
-                      //Ans : In computer programming, a string is traditionally a sequence of characters.
-                      var str = ["Banana", "Orange", "Lemon", "Apple", "Mango"];
-                      print(str, 'str')
-                      //##############################
-                      //Array 
-                      //##############################
-                      //Ans : An array is a data structure containg a number of data value, all of which are 
-                      // same type. Correct array does not cotain numer and string simultaneously 
-                      //One dimension Array wchic have one row and multiple columns
-                      var array1D = ee.Array([1, 2, 3]); 
-                      //Two dimension Array, metrix formate, multiple row and colimns
-                      var array2D = ee.Array([[5, 2, 3], [-2, 7, 10], [6, 5, 9.9]]);
-                      print(array2D, 'array2D')
-                      //Three dimension Array,add time dimension in 2d array
-                      //##############################
-                      // List
-                      //##############################
-                      // Ans: a list is another name for an array.
-                      //Lists are used to store multiple items in a single variable.
-                      //Lists allow duplicate values: var lis = ee.List([5, 'five', 6, 'five']);
-                      var lis = ee.List([5, 'five', 6, 'six']);
-                      print(lis)
-                      // Dictionary
-                      // Dictionary is like a map that is used to store data in the form of a key:value pair.
-                      // we create a dictionary, where we stored Band information and its value.
-                      var dict = ee.Dictionary({
-                         B1: 182,
-                         B2: 219,
-                         B3: 443
-                        });
-                      /**
-                      * Convert S2 surface reflectance units to native/local scale. 1e4 = 10000
-                      */
-                      function scale(key, value) {
-                         return ee.Number(value).divide(1e4);
-                      }
-                      // Apply the function
-                      var app = dict.map(scale)
-                      print(app)
-                    </code></pre>    
+              
               </li>
             <li class="project-item active" data-filter-item data-category="gee">
                   <h1 class = "coadingh1"> Annual Mean</h1> 
