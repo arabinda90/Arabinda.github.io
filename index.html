@@ -755,6 +755,68 @@
       
                
               </li>
+            <li class="project-item active" data-filter-item data-category="gee">
+                  <h1 class = "coadingh1"> Annual Mean</h1> 
+                  <p class="coadingtext">
+                    In this tutorial, we take Sentinel-2 data at 10-meter spatial resolution with 5-days temporal resolution
+                    <a href="https://code.earthengine.google.com/b5d3478d77033a19c8a5d533aa8aabca" style="display: inline-block !important;">Open in Code Editor </a>
+                    
+                    <pre class = "coading"><code>
+                      var India = ee.FeatureCollection("users/maitiarabindageo454/India_sh");
+
+						//----Apply scale factor----------------------------------------
+						var sf = function(image){
+						  return image
+							.addBands(image.expression(
+							  '(NDVI * 0.0001)',
+							  {
+								'NDVI': image.select('NDVI'),
+							  })
+							.rename('NDVIsf')).float()
+							.addBands(image.metadata('system:time_start').divide(1e18).rename('time'))
+						}
+						//----Data collection------------------------------------------------
+						var MOD13Q1 = ee.ImageCollection("MODIS/006/MOD13Q1")//250m
+						//var MOD13Q1 = ee.ImageCollection("MODIS/061/MOD13A1")//500m
+							.filter(ee.Filter.calendarRange(2016, 2020, 'year'))
+							.filter(ee.Filter.calendarRange(3, 6, 'month'))
+							.sort('CLOUD_COVER')
+							//.select('NDVIsf')
+							.map(sf)
+							.map(function(img){return img.clip(India)})
+
+						  var maskQA = function(image) {
+							  return image.updateMask(image.select("SummaryQA").eq(1));
+							};
+
+						var modcloudmask = MOD13Q1//.map(maskQA)
+							print(modcloudmask,'modcloudmask')
+							
+
+						//--------------Annual mean-------------------------------------------------
+						//var months = ee.List.sequence(3, 6);
+						var years = ee.List.sequence(2016, 2020);
+
+						var annualndvi = ee.ImageCollection.fromImages(
+						  years.map(function (year) {
+							var annual = modcloudmask
+								.filter(ee.Filter.calendarRange(year, year, 'year'))
+								.mean();
+							return annual
+								.set('year', year)
+								.set('system:time_start', ee.Date.fromYMD(year, 1, 1));
+						}));
+
+						print(annualndvi)
+
+						Map.addLayer(annualndvi.select('NDVIsf').first(), {min: -1, max: 1, palette: ['red', 'yellow', 'green']}, 'VCI');
+
+
+                    </code></pre>
+                    
+      
+               
+              </li>
             </section>
 
           </article>
